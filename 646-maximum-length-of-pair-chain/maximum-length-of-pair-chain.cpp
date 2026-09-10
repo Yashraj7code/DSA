@@ -5,10 +5,10 @@ public:
              [](vector<int>& a, vector<int>& b) {
                  return a[1] < b[1];
              });
-        int chain=1;
+        int chain=0;
         int res=INT_MIN;
-        int currend=pairs[0][1];
-        for(int i=1;i<pairs.size();i++)
+        int currend=INT_MIN;
+        for(int i=0;i<pairs.size();i++)
         {
             if(pairs[i][0]>currend)
             {
