@@ -31,21 +31,7 @@ public:
     return ans; 
     }
     int maxAbsoluteSum(vector<int>& nums) {
-        // int n=nums.size();
-        // int minsum=0;
-        // int maxsum=0;
-        // int minending=0;
-        // int maxending=0;
-        // for(int i=0;i<n;i++)
-        // {   minending=min(0,nums[i]+minending);
-        //     maxending=max(0,nums[i]+maxending);
-
-        //     minsum=min(minsum,minending);
-        //     maxsum=max(maxending,maxsum);
-            
-            
-        // }
-        // return max(maxsum,abs(minsum));
+        
         int max_=kadane_max(nums);
         int min_=kadane_min(nums);
         return max(abs(max_),abs(min_));
