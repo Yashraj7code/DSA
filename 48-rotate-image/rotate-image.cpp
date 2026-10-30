@@ -12,9 +12,8 @@ public:
         }
         for(int i=0;i<row;i++)
         {
-            vector<int> temp=matrix[i];
-            reverse(temp.begin(),temp.end());
-            matrix[i]=temp;
+            reverse(matrix[i].begin(),matrix[i].end());
+            
         }
     }
 };
