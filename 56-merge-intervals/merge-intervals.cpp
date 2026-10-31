@@ -13,7 +13,7 @@ public:
             }
             else
             {
-                res.back()[1]=max(res.back()[1],intervals[i][1]);
+                res.back()[1]=max(res.back()[1],intervals[i][1]);  //taking maximum end point of interval
             }
         }
         return res;
